@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boardNoticeDAO">
+
+	<select id="selectBoardNoticeListCnt" parameterType="BoardNoticeVO" resultType="integer">
+		SELECT COUNT(*) as cnt
+		FROM tb_board_notice
+		<if test="searchKey != 0">
+			<choose>
+				<when test="searchKey == 1"> WHERE NOTICE_TITLE LIKE CONCAT('%', #{searchVal}, '%') </when>
+				<when test="searchKey == 2"> WHERE NOTICE_CN LIKE CONCAT('%', #{searchVal}, '%') </when>
+				<when test="searchKey == 3"> WHERE REGIST_ID LIKE CONCAT('%', #{searchVal}, '%') </when>
+			</choose> 
+		</if>
+	</select>
+	
+	<select id="selectBoardNoticeList" parameterType="BoardNoticeVO" resultType="egovMap">
+		SELECT ROW_NUMBER() OVER(ORDER BY REGIST_DATE ASC) AS NUM
+		, NOTICE_ID
+		, NOTICE_TITLE
+		, NOTICE_CN
+		, POST_VIEWS
+		, FIX_YN
+		, REGIST_ID
+		, REGIST_DATE
+		FROM tb_board_notice
+		
+		<if test="searchKey != 0">
+			<choose>
+				<when test="searchKey == 1"> WHERE NOTICE_TITLE LIKE CONCAT('%', #{searchVal}, '%') </when>
+				<when test="searchKey == 2"> WHERE NOTICE_CN LIKE CONCAT('%', #{searchVal}, '%') </when>
+				<when test="searchKey == 3"> WHERE REGIST_ID LIKE CONCAT('%', #{searchVal}, '%') </when>
+			</choose> 
+		</if>
+		
+        <!-- <if test="orderVal != null and orderVal != '' "> ORDER BY
+            <choose>
+                <when test="orderVal eq 'BBS_NM'"> BBS_NM </when>
+                <when test="orderVal eq 'BBS_REGI_NM'"> BBS_REGI_NM </when>
+                <when test="orderVal eq 'BBS_REGI_PNTTM'"> BBS_REGI_PNTTM </when>
+                <when test="orderVal eq 'BBS_ID'"> BBS_ID </when>
+            </choose>
+            <choose>
+                <when test="orderKey eq 'DESC'"> DESC</when>
+                <otherwise> ASC</otherwise>
+            </choose>
+        </if> -->
+        ORDER BY NUM DESC
+		LIMIT #{firstRecordIndex}, #{recordCountPerPage}
+	</select>
+	
+	<insert id="insertBoardNotice">
+		INSERT INTO tb_board_notice
+		(NOTICE_ID, NOTICE_TITLE, NOTICE_CN, POST_VIEWS, ATCH_FILE_ID, FIX_YN, REGIST_ID, REGIST_DATE)
+		VALUES(#{noticeId}, #{noticeTitle}, #{noticeCn}, 0, #{atchFileId}, #{fixYn}, #{registId}, now());
+	</insert>
+	
+	<select id="selectBoardNoticeDetail" parameterType="BoardNoticeVO" resultType="egovMap">
+		SELECT NOTICE_ID
+		, NOTICE_TITLE
+		, NOTICE_CN
+		, POST_VIEWS
+		, ATCH_FILE_ID
+		, FIX_YN
+		, REGIST_ID
+		, REGIST_DATE
+		FROM tb_board_notice
+		WHERE NOTICE_ID = #{noticeId}
+	</select>
+	
+	<update id="updateBoardNoticePostViews">
+		UPDATE tb_board_notice
+		SET POST_VIEWS = POST_VIEWS + 1
+		WHERE NOTICE_ID = #{noticeId}
+	</update>
+	
+	<delete id="deleteBoardNotice">
+		DELETE FROM tb_board_notice
+		WHERE NOTICE_ID = #{noticeId};
+	</delete>
+	
+	<update id="updateBoardNotice">
+		UPDATE tb_board_notice
+		SET NOTICE_TITLE = #{noticeTitle}
+		,	NOTICE_CN = #{noticeCn}
+		,	FIX_YN = #{fixYn}
+		,	UPDATE_ID = #{registId}
+		,	UPDATE_DATE = now()
+		WHERE NOTICE_ID = #{noticeId}
+	</update>
+   
+   	<select id="selectBoardNoticeFixList" parameterType="BoardNoticeVO" resultType="egovMap">
+		SELECT ROW_NUMBER() OVER(ORDER BY REGIST_DATE ASC) AS NUM
+		, NOTICE_ID
+		, NOTICE_TITLE
+		, NOTICE_CN
+		, POST_VIEWS
+		, FIX_YN
+		, REGIST_ID
+		, REGIST_DATE
+		FROM tb_board_notice
+		WHERE FIX_YN = 'Y'
+        ORDER BY NUM DESC
+	</select>
+</mapper>

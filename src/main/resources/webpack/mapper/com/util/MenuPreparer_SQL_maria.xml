@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="menuPreparerDAO">
+	
+	<select id="selectHeaderMenuByAuthorList" parameterType="java.lang.String" resultType="egovMap">
+			SELECT
+			       B.MENU_NO AS menuNo
+				 , B.MENU_ORDR AS menuOrdr
+				 , B.MENU_NM AS menuNm
+				 , B.UPPER_MENU_NO AS upperMenuNo
+				 , B.RELATE_IMAGE_PATH AS relateImagePath
+				 , B.RELATE_IMAGE_NM AS relateImageNm
+				 , (SELECT C.URL FROM tb_com_progrmlist C WHERE B.PROGRM_FILE_NM = C.PROGRM_FILE_NM) AS chkURL
+				 , B.MENU_DC AS menuDc	
+			FROM   tb_com_menucreat A, tb_com_menuinfo B
+			WHERE  A.MENU_NO  = B.MENU_NO 
+				AND    A.AUTHOR_CODE = #{authorCode}
+				AND	   B.UPPER_MENU_NO = 0
+			ORDER BY B.MENU_NO
+	</select>
+	
+	<select id="selectLeftMenuByAuthorList" parameterType="java.lang.String" resultType="egovMap">
+			SELECT
+			       B.MENU_NO AS menuNo
+				 , B.MENU_ORDR AS menuOrdr
+				 , B.MENU_NM AS menuNm
+				 , B.UPPER_MENU_NO AS upperMenuNo
+				 , B.RELATE_IMAGE_PATH AS relateImagePath
+				 , B.RELATE_IMAGE_NM AS relateImageNm
+				 , (SELECT C.URL FROM tb_com_progrmlist C WHERE B.PROGRM_FILE_NM = C.PROGRM_FILE_NM) AS chkURL
+				 , B.MENU_DC AS menuDc	
+			FROM   tb_com_menucreat A, tb_com_menuinfo B
+			WHERE  A.MENU_NO  = B.MENU_NO 
+				AND    A.AUTHOR_CODE = #{authorCode}
+				AND	   B.UPPER_MENU_NO != 0
+			ORDER BY B.MENU_NO
+	</select>
+
+</mapper>

@@ -1,0 +1,293 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+} 
+body, h1, h2, h3, h4, h5, h6, input, textarea, select { font-family: 'Noto Sans KR', sans-serif; }
+
+
+/* 초기화 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+a:link {text-decoration: none;}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 초기화 종료 */
+
+@media(max-width:950px) { 
+    .main_left_image{
+        display: none;
+    }
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.main_view{
+	width: 100%;
+	height: 85%;
+    min-height: 650px;
+	display: flex;
+    justify-content: center;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	
+    align-items: center;
+}
+.main_left_image{
+	width : 500px;
+    height: 600px;
+    background-image:url('../../../../images/webpack/com/login/sns_phone.png'); 
+    background-position: 40px 0;
+    position: relative;
+}
+.left_img{
+    position: absolute;
+    left: 196px;
+    top: 29px;
+}
+.main_right_login{
+	width : 500px;
+    height: 600px;
+}
+
+.login_input{
+	width: 100%;
+    min-width: 450px;
+    height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.login_input_cont{
+	width: 100%;
+	padding: 10px 0;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+}
+
+.no_border_cont{
+	width: 100%;
+	padding: 10px 0;
+    text-align: center;
+    flex-direction: column;
+}
+.input_group{
+    margin: 0 50px;
+}
+.input_id{
+    width: auto;
+    margin: 0 40px 16px;
+}
+.input_id_tag{
+    width: 100%;
+    padding: 9px 0 7px 8px;
+    border: 1px solid #e1d3d3;
+}
+.input_pw{
+    width: auto;
+    margin: 0 40px 16px;
+}
+.input_pw_tag{
+    width: 100%;
+    padding: 9px 0 7px 8px;
+    border: 1px solid #e1d3d3;
+}
+.input_button{
+    width: auto;
+    margin: 0 27px 0 40px;
+}
+.login_button{
+    width: 100%;
+    padding: 9px 0 7px 8px;
+    background-color: #0095f6;
+    border-radius: 4px;
+    color: #FFF;
+    border: 0px;
+    cursor: pointer;
+}
+
+.login_input_cont2{
+	width: 100%;
+	background-color: green;
+}
+.login_input_cont3{
+	width: 100%;
+	background-color: green;
+}
+
+.main_text{
+	margin: 22px auto 12px;
+}
+
+.password_src{
+    font-size: 12px;
+    padding: 10px 0;
+    color: rgb(40, 68, 68);
+}
+.password_src a:link{
+    text-decoration: none;
+    color: #000;
+}
+.account_create_qut{
+    font-size: 14px;
+    padding: 10px 0;
+    color: rgb(40, 68, 68);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.account_create{
+    font-size: 14px;
+    padding: 10px 0;
+    color: #0095f6;
+    font-weight: 800;
+}
+
+.mt-15{
+    margin-top: 15px;
+}
+
+.store_box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.store_icon{
+    width: auto;
+    height: 50px;
+}
+
+.login_footer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.footer_line{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.line_content{
+    color: #8e8e8e;
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.copy_right{
+    color: #8e8e8e;
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+.page_row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main_header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header_box{
+    width: 100%;
+    height: 60px;
+    min-width: 500px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo_box{ width: 280px;}
+.header_logo{width: 150px; margin-right: 50px;}
+
+.search_box{
+    margin-right: 50px;
+    width: 30%; 
+    height: 50%;
+    max-width: 600px;
+    min-width: 300px;
+    background-color: #8e8e8e; 
+    border-radius: 10px;
+}
+.search_input{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233, 233, 233);
+}
+
+.icon_box{
+    width: 300px;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.main_content{
+    width: 100%;
+    height: 90%;
+}

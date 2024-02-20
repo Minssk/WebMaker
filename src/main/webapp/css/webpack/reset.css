@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'NotoSanskr-Regular';
+    src: url('/font/noto_sans_lite/NotoSansKR-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+    font-family: 'NotoSanskr-Regular' , sans-serif;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{
+	width: 100vw;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a { text-decoration:none !important}
+
+/*사이즈 조절*/
+@media (max-width: 991px) {
+    .view_head_line{justify-content: flex-start;}
+    .view_head_line li{margin: 0px 10px;}
+    .header_container{padding-bottom: 70px;}
+  }
+@media (min-width: 992px) {
+    .view_head_line{justify-content: flex-end;}
+    .link_tab{margin: 0 5px;}
+}
+/*사이즈 조절*/
+
+
