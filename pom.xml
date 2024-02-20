@@ -44,7 +44,7 @@
     </repositories>
 
 	<dependencies>
-		<!-- 표준프레임워크 실행환경 -->
+		<!-- 표준프레임워크 실행환경 24-02-21 -->
         <dependency>
 		    <groupId>org.egovframe.rte</groupId>
 		    <artifactId>org.egovframe.rte.ptl.mvc</artifactId>
