@@ -77,26 +77,16 @@ body{
     min-height: 650px;
 	display: flex;
     justify-content: center;
+    align-items:center;
 	flex-wrap: nowrap;
 	flex-direction: row;
-	
-    align-items: center;
-}
-.main_left_image{
-	width : 500px;
-    height: 600px;
-    background-image:url('../../../../images/webpack/com/login/sns_phone.png'); 
-    background-position: 40px 0;
-    position: relative;
-}
-.left_img{
-    position: absolute;
-    left: 196px;
-    top: 29px;
 }
 .main_right_login{
 	width : 500px;
     height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 .login_input{
@@ -167,7 +157,11 @@ body{
 }
 
 .main_text{
-	margin: 22px auto 12px;
+	margin: 22px 12px;
+}
+
+.main_text > img{
+	width: 250px;
 }
 
 .password_src{

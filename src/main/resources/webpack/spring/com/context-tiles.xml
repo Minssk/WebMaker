@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
-<!DOCTYPE tiles-definitions PUBLIC
-       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
-       "classpath:/webpack/egovProps/dtds/tiles-config_3_0.dtd">
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
        
 <tiles-definitions>
 	
 	<definition name="userMain" template="/WEB-INF/jsp/webpack/com/layout/UserMain_layout.jsp" preparer="webpack.com.util.MenuPreparer">
-    	<put-attribute name="title" value="MTEC" />
+    	<put-attribute name="title" value="/WEB-INF/jsp/webpack/com/tiles/UserTitle.jsp" />
         <put-attribute name="header" value="/WEB-INF/jsp/webpack/com/tiles/UserHeader.jsp" />
+        <put-attribute name="nav" value="/WEB-INF/jsp/webpack/com/tiles/UserNav.jsp" />
         <put-attribute name="contents" value="" />
         <put-attribute name="footer" value="/WEB-INF/jsp/webpack/com/tiles/UserFooter.jsp" />
     </definition>

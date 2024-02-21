@@ -19,31 +19,19 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title><tiles:getAsString name="title"/></title>
-		<link rel="icon" href="<c:url value='/images/webpack/com/login/pabi.png' />">
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/bootstrap/bootstrap.min.css' /> " />
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/slide.css' /> " />
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/layout.css' /> " />
-		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/reset.css' /> " />
+		<tiles:insertAttribute name="title"/>
 		
-		<script type="text/javascript" src="<c:url value='/js/bootstrap/bootstrap.min.js'/>" ></script>
-		<script type="text/javascript" src="<c:url value='/js/webpack/jquery-3.6.1.min'/>" ></script>
-		
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/user/main/variable.css' />" />
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/user/main/main.css' /> " />
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/user/main/reset.css' /> " />
+		<script type="text/javascript" src="<c:url value='/js/webpack/jquery-3.6.1.min.js'/>" ></script>
 	</head>
-	
-	<body class="d-flex flex-column w-100 h-100 user_main_con">
-		<div class="main_wrap">
-			<div class="border-bottom d-flex header_container w-100">
-				<tiles:insertAttribute name="header"/>
-			</div>
-			<div class="d-flex w-100 h-100">
-				<tiles:insertAttribute name="contents"/>
-			</div>
-		</div>
-		<div class="footer_container w-100 border-top d-flex p-3 border-0">
+	<body>
+		<div class="main-wrap min-view">
+			<tiles:insertAttribute name="header"/>
+			<tiles:insertAttribute name="nav"/>
+			<tiles:insertAttribute name="contents"/>
 			<tiles:insertAttribute name="footer"/>
 		</div>
-		
 	</body>
-	
 </html>
