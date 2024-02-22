@@ -1,5 +1,5 @@
 .contents-area{display: flex; justify-content: center; align-items: center; width: 100%;}
-.contents-wrap{    margin-top: 100px; padding-top: 80px; max-width: 1400px;}
+.contents-wrap{    margin-top: 100px; padding-top: 80px; max-width: 1400px; width: 100%;}
 
 .main_title{font-size:1.8em;font-weight:600;color:#0150b1;}
 .main_content{min-height: 346px;}

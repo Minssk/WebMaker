@@ -7,11 +7,14 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 
 <c:set var="pageTitle">내 작품 관리</c:set>
-<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/user/contents/textContentMgt.css' />" />
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/user/contents/textcontent-mgt.css' />" />
 
 <div class="main_content">
 	<div>
 		<h4 class="main_title"><c:out value="${pageTitle}"/></h4>
+	</div>
+	<div class="body-contents-area">
+	
 	</div>
 	
 	

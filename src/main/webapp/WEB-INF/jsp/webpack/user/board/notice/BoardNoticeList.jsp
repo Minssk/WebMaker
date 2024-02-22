@@ -72,7 +72,7 @@
 	}
 </script>
 
-<div class="main_contentw">
+<div class="main_content">
 	<div>
 		<h4 class="main_title"><c:out value="${pageTitle}"/></h4>
 	</div>
