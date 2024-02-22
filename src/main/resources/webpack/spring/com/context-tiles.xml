@@ -12,10 +12,8 @@
     </definition>
     
     <definition name="userSub"  template="/WEB-INF/jsp/webpack/com/layout/UserSub_layout.jsp" preparer="webpack.com.util.MenuPreparer">
-    	<put-attribute name="title" value="MTEC" />
+    	<put-attribute name="title" value="/WEB-INF/jsp/webpack/com/tiles/UserTitle.jsp" />
         <put-attribute name="header" value="/WEB-INF/jsp/webpack/com/tiles/UserHeader.jsp" />
-        <put-attribute name="banner" value="/WEB-INF/jsp/webpack/com/tiles/UserBanner.jsp" />
-        <put-attribute name="left" value="/WEB-INF/jsp/webpack/com/tiles/UserLeft.jsp" />
         <put-attribute name="contents" value="" />
         <put-attribute name="footer" value="/WEB-INF/jsp/webpack/com/tiles/UserFooter.jsp" />
     </definition>

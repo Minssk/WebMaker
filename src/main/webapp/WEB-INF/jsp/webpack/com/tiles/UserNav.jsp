@@ -41,7 +41,7 @@
             </div>
             <input class="banner-search-input" type="text" placeholder="검색어를 입력해주세요.">
             <div class="banner-search-icon">
-                <a><img class="header-icon" src="<c:url value='/images/webpack/com/main/search.svg' />"></a>
+                <a href="#"><img class="header-icon" src="<c:url value='/images/webpack/com/main/search.svg' />"></a>
             </div>
         </div>
     </div>

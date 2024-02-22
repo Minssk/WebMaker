@@ -3,6 +3,7 @@
 */
 
 html, body{ width: 100%; height: 100%;}
+a.link-black {color: black; text-decoration: none;}
 
 .main-wrap{
    height: 100vh;
@@ -17,13 +18,14 @@ html, body{ width: 100%; height: 100%;}
    left: 0;
    right: 0;
    z-index: 1;
+   box-shadow: 0px 0px 5px #3333334f;
 }
 .header-wrap{width: 100vw; height: 100%; display: flex; flex-direction: row; justify-content: center; }
 
 .header-logo-wrap{flex: 1; width: 100%; display: flex; justify-content: center; align-items: center;}
-   .header-logo-img{width: 125px;}
+   .header-logo-img{width: 110px;}
 
-.header-menu-wrap{flex: 3; width: 100%;}
+.header-menu-wrap{flex: 5; width: 100%;}
    .header-menu-wrap > ul{
       width: 100%;
       height: 100%;
@@ -375,3 +377,24 @@ html, body{ width: 100%; height: 100%;}
          justify-content: center;
          width: 100%;
       }
+   
+   .move-top {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	width: 50px;
+	height: 50px;
+	background: #233ab4;
+	color: #fff;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	box-shadow: 0px 0px 5px #3333334f;
+	cursor: pointer;
+ }
+ 
+ .move-top > img {
+	filter: invert(100%);
+	width: 30px;
+ }

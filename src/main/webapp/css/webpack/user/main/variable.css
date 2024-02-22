@@ -21,6 +21,10 @@
     max-width: 1400px;
  }
 
+.max-view-header{
+    max-width: 1600px;
+}
+
 .min-view{
    min-width: 1200px;
 }

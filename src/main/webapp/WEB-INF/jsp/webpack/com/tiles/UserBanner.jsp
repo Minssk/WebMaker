@@ -11,11 +11,10 @@
 <tiles:importAttribute name="loginId" />
 
 
-<div class="banner_container">
+<div class="banner_container mt-5">
 	<div class="banner_title">
 		<span><c:out value="${sessionScope['menuName']}"/></span>
 	</div>
-		
 </div>
 <div class="banner_path">
 	<div class="banner_box inner">
