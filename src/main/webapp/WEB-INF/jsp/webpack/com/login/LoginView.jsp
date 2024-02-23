@@ -16,7 +16,6 @@
 
 <script type="text/javaScript" language="javascript">
 $("#password").keypress(function (e) {
-	console.log('press');
 	if(e.keyCode === 13){
 		actionLogin();
 	}
@@ -149,4 +148,12 @@ function getid(form) {
 	        </footer> -->
     </div>
 </body>
+<script>
+$("#password").keypress(function (e) {
+	if(e.keyCode === 13){
+		actionLogin();
+	}
+});
+</script>
+
 </html>

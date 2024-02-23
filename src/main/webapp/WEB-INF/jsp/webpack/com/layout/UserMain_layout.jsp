@@ -21,6 +21,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<tiles:insertAttribute name="title"/>
 		
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/com/commons.css' />" />
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/user/main/variable.css' />" />
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/user/main/main.css' /> " />
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/user/main/reset.css' /> " />

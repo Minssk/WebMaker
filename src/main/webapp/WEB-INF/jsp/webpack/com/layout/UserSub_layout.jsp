@@ -21,6 +21,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<tiles:insertAttribute name="title"/>
 		
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/com/commons.css' />" />
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/user/main/variable.css' />" />
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/content.css' /> " />
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/user/main/main.css' /> " />
@@ -37,6 +38,93 @@
 			</div>
 			<tiles:insertAttribute name="footer"/>
 		</div>
+		
+		<!-- Move TOP -->
+		<div class="move-top"><img src="<c:url value='/images/webpack/com/main/arrow-up.svg'/>"></div>
+		<script>
+		$(".move-top").on("click",function(){
+			$('html, body').animate({
+				scrollTop : 0
+			},400)
+			return false;
+		});
+		</script>
+		
+		<!-- Load Icon -->
+		<div id="load">
+		    <img src="/images/webpack/com/header/Rhombus.gif" alt="loading">
+		</div>
+		<script>
+			$(window).on('load', function() {
+			    $('#load').hide();
+			});
+		</script>
+		
+		<!-- Modal Temp1 -->
+		<div class="modal">
+			<div class="modal-wrap">
+				<div class="modal-header">
+					<div class="modal-header-button">
+						
+					</div>
+					<div class="modal-herader-title">
+					
+					</div>
+					<div class="modal-header-close">
+					
+					</div>
+				</div>
+		        <div class="modal-body">
+		        
+		        </div>
+			</div>
+	    </div>
+	    <style>
+	        .modal{
+	            position:absolute;
+	            display:flex;
+	            justify-content: center;
+	            align-items: center;
+	            top:0;
+	            left:0;
+	            width:100%;
+	            height:100%;
+	        }
+	        .modal-wrap{
+	        	display:flex;
+	            flex-direction:column;
+	            justify-content: center;
+	            align-items: center;
+	            width: 500px;
+			    height: 230px;
+			    border: 1px solid #373737;
+			    border-radius: 10px;
+			    overflow: hidden;
+	        }
+	        .modal-header{
+	        	width: 100%;
+	        	height: 30px;
+	        	background-color: #373737;
+	        	border: none;
+	        	display: flex;
+	        	align-items: center;
+	        }
+	        .modal-body{
+			    background-color: white;
+			    width: 100%;
+			    height: 200px;
+			    border: none;
+	        }
+	    </style>
+	    <script>
+	        const modal = document.querySelector('.modal');
+	        const btnOpenModal=document.querySelector('.btn-open-modal');
+	
+	        btnOpenModal.addEventListener("click", ()=>{
+	            modal.style.display="flex";
+	        });
+	    </script>
+	    
 	</body>
 </html>
 

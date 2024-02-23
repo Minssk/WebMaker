@@ -41,15 +41,8 @@
     </div>
 </header>
 
-<div class="move-top"><img src="<c:url value='/images/webpack/com/main/arrow-up.svg'/>"></div>
-<script>
-$(".move-top").on("click",function(){
-	$('html, body').animate({
-		scrollTop : 0
-	},400)
-	return false;
-});
-</script>
+
+
 
 <%-- <ul class="navbar-nav mb-2 mb-lg-0 navbar-fixed-topd w-100 d-flex flex-row me-3 me-4 view_head_line">
 	<c:forEach var="menuList" items="${headMenuList}">

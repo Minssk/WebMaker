@@ -2,11 +2,10 @@
    KMS
 */
 
-html, body{ width: 100%; height: 100%;}
+html, body{ width: 100%;}
 a.link-black {color: black; text-decoration: none;}
 
 .main-wrap{
-   height: 100vh;
    background-color: rgb(255, 255, 255);
 }
 
@@ -378,23 +377,3 @@ a.link-black {color: black; text-decoration: none;}
          width: 100%;
       }
    
-   .move-top {
-	position: fixed;
-	bottom: 1rem;
-	right: 1rem;
-	width: 50px;
-	height: 50px;
-	background: #233ab4;
-	color: #fff;
-	border-radius: 8px;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	box-shadow: 0px 0px 5px #3333334f;
-	cursor: pointer;
- }
- 
- .move-top > img {
-	filter: invert(100%);
-	width: 30px;
- }
