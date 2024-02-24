@@ -60,8 +60,9 @@
 			});
 		</script>
 		
+		
 		<!-- Modal Temp1 -->
-		<div class="modal">
+		<!-- <div class="modal">
 			<div class="modal-wrap">
 				<div class="modal-header">
 					<div class="modal-header-button">
@@ -123,7 +124,7 @@
 	        btnOpenModal.addEventListener("click", ()=>{
 	            modal.style.display="flex";
 	        });
-	    </script>
+	    </script> -->
 	    
 	</body>
 </html>

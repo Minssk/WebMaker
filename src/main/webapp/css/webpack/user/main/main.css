@@ -3,7 +3,19 @@
 */
 
 html, body{ width: 100%;}
+
 a.link-black {color: black; text-decoration: none;}
+
+/*Key frames*/
+@keyframes fade-in-box {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*Key frames*/
 
 .main-wrap{
    background-color: rgb(255, 255, 255);
@@ -39,8 +51,58 @@ a.link-black {color: black; text-decoration: none;}
          margin: 0 10px;
          color: rgb(0, 0, 0);
       }
-.header-button-wrap{flex: 1; width: 100%; display: flex; justify-content: center; align-items: center;}
+.header-button-wrap{flex: 1; width: 100%; display: flex; justify-content: center; align-items: center; position: relative;}
 .header-icon{width: 27px; margin: 0 10px; }
+.header-icon-person{width: 50px; margin: 0 10px; }
+
+/*Drop Down*/
+.dropdown-person-icon-box{cursor: pointer;}
+.header-dropdown-box {
+    position: absolute;
+    display: none;
+    top: 80px;
+    right: 35px;
+    width: 230px;
+    background: white;
+    border-radius: 1%;
+    border: 1px solid #6a6a6a;
+    box-shadow: 3px 3px 8px #000000;
+    animation: fade-in-box 0.5s ease-in-out;
+}
+.header-dropdown-username{
+	text-align: center;
+   	font-weight: 600;
+   	padding: 10px;
+}
+
+.header-dropdown-menu{
+	padding: 15px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.header-dropdown-menu:hover{
+	background-color: #d9d9d9;
+}
+
+.header-dropdown-menu a {
+    text-align: left;
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.header-dropdown-line{
+	border-bottom: 1px solid #bfbfbf;
+}
+.header-dropdown-menu-icon{
+	width: 15px;
+	margin-right: 10px;
+}
+/*Drop Down*/
+
 
 .header-banner{
    margin-top: 100px;

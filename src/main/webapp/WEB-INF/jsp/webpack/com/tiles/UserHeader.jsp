@@ -25,85 +25,66 @@
 						</a>
 					</li>
 				</c:forEach>
-                <!-- <li><a>자유</a></li>
-                <li><a>플러스</a></li>
-                <li><a>랭킹</a></li>
-                <li><a>웹만화</a></li>
-                <li><a>내서재</a></li> -->
             </ul>
         </div>
         <div class="header-button-wrap">
             <a href="#"><img class="header-icon" src="<c:url value='/images/webpack/com/main/bell.svg'/>"></a>
             <a href="#"><img class="header-icon" src="<c:url value='/images/webpack/com/main/pencil-square.svg'/>"></a>
             <a href="#"><img class="header-icon" src="<c:url value='/images/webpack/com/main/search.svg'/>"></a>
-            <a href="#"><img class="header-icon" src="<c:url value='/images/webpack/com/main/person-circle.svg'/>"></a>
+			
+			<div class="dropdown-person-icon-box">
+				<img id="dropdown-person" class="header-icon-person" src="<c:url value='/images/webpack/com/main/dropdown/person-sample.png'/>">
+			</div>
+            <div class="header-dropdown-box">
+            	<div class="header-dropdown-username">
+            		<c:out value="${loginId}"/>님 환영합니다.
+            	</div>
+            	<div class="header-dropdown-line"></div>
+            	<div class="header-dropdown-menu">
+            		<img class="header-dropdown-menu-icon" src="<c:url value='/images/webpack/com/main/dropdown/pencil-square.svg'/>">
+            		<a href="#">신규 작품 등록</a>
+            	</div>
+	            <div class="header-dropdown-menu">
+	            	<img class="header-dropdown-menu-icon" src="<c:url value='/images/webpack/com/main/dropdown/folder.svg'/>">
+	            	<a href="#">내 작품 관리</a>
+	            </div>
+	            <div class="header-dropdown-line"></div>
+	            <div class="header-dropdown-menu">
+	            	<img class="header-dropdown-menu-icon" src="<c:url value='/images/webpack/com/main/dropdown/megaphone.svg'/>">
+	            	<a href="#">리뷰/홍보</a>
+	            </div>
+	            <div class="header-dropdown-menu">
+	            	<img class="header-dropdown-menu-icon" src="<c:url value='/images/webpack/com/main/dropdown/keyboard.svg'/>">
+	            	<a href="#">자유 게시판</a>
+	            </div>
+	            <div class="header-dropdown-line"></div>
+	            <div class="header-dropdown-menu">
+	            	<img class="header-dropdown-menu-icon" src="<c:url value='/images/webpack/com/main/dropdown/gear.svg'/>">
+	            	<a href="#">사용자 설정</a>
+	            </div>
+	            <div class="header-dropdown-menu">
+	            	<img class="header-dropdown-menu-icon" src="<c:url value='/images/webpack/com/main/dropdown/clipboard2-check.svg'/>">
+	            	<a href="#">공지사항/고객센터</a>
+	            </div>
+	            <div class="header-dropdown-line"></div>
+	            <div class="header-dropdown-menu">
+	            	<img class="header-dropdown-menu-icon" src="<c:url value='/images/webpack/com/main/dropdown/box-arrow-right.svg'/>">
+	            	<a href="<c:url value='/uat/uia/actionLogout.do'/>">로그아웃</a>
+	            </div>
+	        </div>
         </div>
     </div>
+    <script>
+	    var dropdown = document.querySelector("#dropdown-person");
+	    var dropdownContent = document.querySelector(".header-dropdown-box");
+	    dropdown.addEventListener("click", function() {
+	      if (dropdownContent.style.display === "block") {
+	          dropdownContent.style.display = "none";
+	      } else {
+	          dropdownContent.style.display = "block";
+	      }
+	    });
+    </script>
 </header>
 
 
-
-
-<%-- <ul class="navbar-nav mb-2 mb-lg-0 navbar-fixed-topd w-100 d-flex flex-row me-3 me-4 view_head_line">
-	<c:forEach var="menuList" items="${headMenuList}">
-		<a class="nav-link active" aria-current="page" href="<c:url value='${menuList.chkURL }' />"><c:out value="${menuList.menuNm}"/></a>
-	</c:forEach>
-</ul>
-<img src="<c:url value='/images/webpack/com/icon/icon_appoval.svg'/>" class="header_img mx-2 me-3">
- --%>
- 
-<%-- <li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle fs-12" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-	<c:out value="${loginId}"></c:out>
-</a>
-<ul class="dropdown-menu dropdown-menu-end">
-    <li>
-        <a href="#" class="dropdown-item header_ibox"
-            onclick="goToApprovalMgt('')" title="결재함 보기">
-   <img src="<c:url value='/images/webpack/com/icon/icon_appoval.svg'/>" class="header_img mx-2 me-3">
-        <p>
-            결재함
-        </p>
-    </a>
-</li>
-<li>
-    <a href="#" class="dropdown-item header_ibox"
-        onclick="open_modal('pledge')" title="서약서 관리 보기">
-   <img src="<c:url value='/images/webpack/com/icon/icon_mgt.svg'/>" class="header_img mx-2 me-3">
-        <p>
-            서약서 관리
-        </p>
-    </a>
-</li>
-<li>
-    <a href="#" class="dropdown-item header_ibox"
-        onclick="open_modal('mail');" title="협업 메일 보기">
-   <img src="<c:url value='/images/webpack/com/icon/icon_mail.svg'/>" class="header_img mx-2 me-3">
-        <p>
-            협업 메일
-        </p>
-    </a>
-</li>
-<li>
-    <a href="#" class="dropdown-item header_ibox" onclick="open_modal('ach')"
-   title="활동 이력 보기">
-   <img src="<c:url value='/images/webpack/com/header/icon_log.svg'/>" class="header_img mx-2 me-3">
-        <p>
-            활동 이력
-        </p>
-    </a>
-</li>
-<li>
-    <hr class="dropdown-divider">
-</li>
-<li>
-    <a href="#" class="dropdown-item header_ibox" 
-    	onclick="location.href='<c:url value='/uat/uia/actionLogout.do'/>'"  title="계정 로그아웃">
-   <img src="<c:url value='/images/webpack/com/header/icon_logout.svg'/>" class="header_img mx-2 me-3">
-                <p>
-                    로그아웃
-                </p>
-            </a>
-        </li>
-    </ul>
-</li> --%>
