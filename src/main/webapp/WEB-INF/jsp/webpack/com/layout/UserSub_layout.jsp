@@ -21,6 +21,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<tiles:insertAttribute name="title"/>
 		
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+		
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/com/commons.css' />" />
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/user/main/variable.css' />" />
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/content.css' /> " />

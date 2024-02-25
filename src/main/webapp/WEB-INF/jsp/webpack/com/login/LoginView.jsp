@@ -9,7 +9,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <title>WEBMAKER</title>
 
-<link rel="icon" href="<c:url value='/images/webpack/com/login/pabi.png' />">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="<c:url value='/css/webpack/com/login/login.css' />">
 <script type="text/javascript" src="<c:url value='/js/webpack/jquery-3.6.1.min.js'/>" ></script>
 
