@@ -23,7 +23,7 @@ public class TextContentMgtController {
     private TextContentMgtService textContentMgtService;
 	
 	@RequestMapping("/TextContentMgt.do")
-	public String userMain(HttpServletRequest request, HttpSession httpSession, ModelMap model) throws Exception {
+	public String textContentMgt(HttpServletRequest request, HttpSession httpSession, ModelMap model) throws Exception {
 		
 		LoginVO loginVO = (LoginVO) EgovUserDetailsHelper.getAuthenticatedUser();
 		
@@ -38,6 +38,22 @@ public class TextContentMgtController {
 		
 		return VIEW_ROOT + "/TextContentMgt.subU";
 	}
-
+	
+	@RequestMapping("/TextContentRegister.do")
+	public String textContentRegister(ModelMap model) throws Exception {
+		
+		LoginVO loginVO = (LoginVO) EgovUserDetailsHelper.getAuthenticatedUser();
+		
+		System.out.println("################### 권한 ###################");
+		System.out.println(loginVO.getAuthorCode());
+		System.out.println("##########################################");
+		
+		
+		
+		model.addAttribute("loginVO", loginVO);
+		model.addAttribute("rootUrl", URL_ROOT);
+		
+		return VIEW_ROOT + "/TextContentRegister.subU";
+	}
 	
 }
