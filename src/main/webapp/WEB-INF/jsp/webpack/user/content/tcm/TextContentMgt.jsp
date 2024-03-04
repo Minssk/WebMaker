@@ -25,7 +25,7 @@
 			<div class="contents-header-banner-area">
 				<div class="contents-header-upper-banner">
 					<img class="contents-header-upper-banner-icon" src="/images/webpack/user/textcontent/piggy-bank-fill.svg">
-					현재까지 작가님께 후원된 금액 <span>0원</span> 누적되었습니다.
+					현재까지 작가님께 후원된 금액 <span>237,000원</span> 누적되었습니다.
 				</div>
 				<div class="contents-header-down-banner">
 					<div class="contents-header-down-banner-left">
