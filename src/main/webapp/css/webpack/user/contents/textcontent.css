@@ -91,10 +91,10 @@
 	display: flex;
 }
 	.contents-body-cover-wrap{
+	    width: 138px;
 		height: 200px;
 		border-radius: 10px;
 		overflow: hidden;
-		border: 1px solid #ebebeb;
 	}
 	.contents-body-cover-wrap > img{
 		height: 100%;

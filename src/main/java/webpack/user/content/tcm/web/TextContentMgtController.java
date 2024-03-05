@@ -4,6 +4,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,7 +31,6 @@ public class TextContentMgtController {
 		System.out.println("################### 권한 ###################");
 		System.out.println(loginVO.getAuthorCode());
 		System.out.println("##########################################");
-		
 		
 		
 		model.addAttribute("loginVO", loginVO);

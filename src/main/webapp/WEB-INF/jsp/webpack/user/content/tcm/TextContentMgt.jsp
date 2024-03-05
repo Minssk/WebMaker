@@ -43,8 +43,10 @@
 			<!-- row -->
 			<div class="contents-body-row">
 				<div class="contents-body-content-wrap">
-					<div class="contents-body-cover-wrap">
-						<img class="contents-body-cover" src="/images/webpack/com/main/board/1.png">
+					<div>
+						<div class="contents-body-cover-wrap">
+							<img class="contents-body-cover" src="/images/webpack/com/main/board/1.png">
+						</div>
 					</div>
 					<div class="contents-body-info-wrap">
 						<div class="contents-body-title-area">
@@ -116,8 +118,10 @@
 			
 			<div class="contents-body-row">
 				<div class="contents-body-content-wrap">
-					<div class="contents-body-cover-wrap">
-						<img class="contents-body-cover" src="/images/webpack/com/main/board/5.png">
+					<div>
+						<div class="contents-body-cover-wrap">
+							<img class="contents-body-cover" src="/images/webpack/com/main/board/5.png">
+						</div>
 					</div>
 					<div class="contents-body-info-wrap">
 						<div class="contents-body-title-area">
