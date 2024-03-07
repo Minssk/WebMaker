@@ -131,6 +131,7 @@ public class BoardNoticeController {
 		LoginVO loginVO = (LoginVO) EgovUserDetailsHelper.getAuthenticatedUser();
 		if(loginVO == null)
 			 return redirectURL;
+		System.out.println("ALERT boardNoticeVO : " + boardNoticeVO.toString());
 		EgovMap resultMap = boardNoticeService.selectBoardNoticeDetail(boardNoticeVO);
 		boardNoticeService.updateBoardNoticePostViews(boardNoticeVO);
 		

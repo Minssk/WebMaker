@@ -88,3 +88,46 @@
 </header>
 
 
+<!-- Move TOP -->
+<div class="move-top"><img src="<c:url value='/images/webpack/com/main/arrow-up.svg'/>"></div>
+<script>
+$(".move-top").on("click",function(){
+	$('html, body').animate({
+		scrollTop : 0
+	},400)
+	return false;
+});
+</script>
+<!-- Move TOP -->
+
+<!-- Modal Call -->
+<script>
+    function openModal(code) {
+    	var modal = document.querySelector('.modal');
+    	while (modal.firstChild) {
+    	    modal.removeChild(modal.firstChild);
+    	}
+    	$.ajax({
+			url: '/com/util/GetUserModal.do',
+			data: {"modal_code" : code},
+			type: 'post',
+			success: function(result){
+				modal.innerHTML = result;
+				modal.style.display = "flex";
+			},
+			error: function(){
+				console.log('error modal');	
+			}
+		});
+    }
+    
+    function closeModal() {
+    	var modal = document.querySelector('.modal');
+    	while (modal.firstChild) {
+    	    modal.removeChild(modal.firstChild);
+    	}
+    	modal.style.display = "none";
+    }
+</script>
+<!-- Modal Call -->
+

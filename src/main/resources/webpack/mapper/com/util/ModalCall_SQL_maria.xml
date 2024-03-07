@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="modalCallDAO">
+	
+	<select id="getUserModalInfo" resultType="egovMap">
+			SELECT a.md_code
+				, a.md_hd_title
+				, a.md_title
+				, a.md_main
+				, a.md_type	
+			FROM   webmaker.tb_modal_tmp a
+			WHERE  a.md_code = #{mdCode}
+			LIMIT 1
+	</select>
+	
+</mapper>

@@ -20,12 +20,6 @@
 	function move_detail(noticeId){
 		var searchForm = document.getElementById("searchForm");
 		searchForm.action = "<c:out value="${pageContext.request.contextPath}"/><c:out value="${rootUrl}"/>/BoardNoticeDetail.do";
-		var appendTag = document.createElement("input");
-		appendTag.type = "hidden";
-		appendTag.name = "noticeId";
-		appendTag.value = noticeId;
-		document.getElementById("searchForm").appendChild(appendTag);
-		
 		searchForm.noticeId.value = noticeId;
 		searchForm.submit();
 	}
@@ -143,6 +137,7 @@
 	</div>
 	
 	<form id="searchForm" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="noticeId" value="">
 		<input type="hidden" name="pageIndex" value="<c:out value="${boardNoticeVO.pageIndex}"/>">
 		<div class="search_box">
 			<select class="input_search" name="searchKey">
