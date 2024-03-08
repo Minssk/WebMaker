@@ -1,5 +1,7 @@
 package webpack.com.util.service.impl;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.egovframe.rte.fdl.cmmn.EgovAbstractServiceImpl;
@@ -17,6 +19,11 @@ public class ModalCallServiceImpl extends EgovAbstractServiceImpl implements Mod
 	@Override
 	public EgovMap getUserModalInfo(int modal_code) {
 		return modalCallDAO.getUserModalInfo(modal_code);
+	}
+
+	@Override
+	public List<EgovMap> getUserModalBtnList(EgovMap map) {
+		return modalCallDAO.getUserModalBtnList(map);
 	}
 
 	

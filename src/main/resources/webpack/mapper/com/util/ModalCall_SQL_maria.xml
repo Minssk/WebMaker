@@ -14,4 +14,17 @@
 			LIMIT 1
 	</select>
 	
+	<select id="getUserModalBtnList" resultType="egovMap">
+			SELECT a.btn_id
+				, a.md_code
+				, a.btn_order
+				, a.btn_type
+				, a.btn_text
+				, a.btn_value
+				, a.btn_color
+			FROM   webmaker.tb_modal_btn a
+			WHERE  a.md_code = #{mdCode}
+			ORDER BY a.btn_order ASC
+	</select>
+	
 </mapper>

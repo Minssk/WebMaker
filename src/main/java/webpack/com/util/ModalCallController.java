@@ -1,5 +1,7 @@
 package webpack.com.util;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -30,15 +32,16 @@ public class ModalCallController {
 			@RequestParam(required = true, defaultValue = "0") int modal_code) throws Exception {
 		LoginVO loginVO = (LoginVO) EgovUserDetailsHelper.getAuthenticatedUser();
 		boolean loginChk = EgovUserDetailsHelper.isAuthenticated();
-		System.out.println("ALERT USER :" + loginChk);
-		System.out.println("ALERT modal_code : " + modal_code);
+		
 		if(!loginChk) {
 			return "auth";
 		}
-		if(modal_code != 0) {
-			EgovMap map = modalCallService.getUserModalInfo(modal_code);
-			model.addAttribute("modalMap", map);
-		}
+		
+		EgovMap map = modalCallService.getUserModalInfo(modal_code);
+		List<EgovMap> btnList = modalCallService.getUserModalBtnList(map);
+		
+		model.addAttribute("modalMap", map);
+		model.addAttribute("btnList", btnList);
 		model.addAttribute("loginVO", loginVO);
 		model.addAttribute("rootUrl", URL_ROOT);
 		

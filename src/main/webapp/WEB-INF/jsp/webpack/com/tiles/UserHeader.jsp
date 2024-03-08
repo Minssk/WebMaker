@@ -101,6 +101,7 @@ $(".move-top").on("click",function(){
 <!-- Move TOP -->
 
 <!-- Modal Call -->
+<div class="modal"></div>
 <script>
     function openModal(code) {
     	var modal = document.querySelector('.modal');

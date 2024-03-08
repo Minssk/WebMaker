@@ -28,7 +28,17 @@
        		<p class="modal-content-main"><c:out value="${modalMap.mdMain}"/></p>
        	</div>
        	<div class="modal-content-btn-wrap">
-       		<button onclick="closeModal();">확인</button>
+       		<c:forEach var="result" items="${btnList}">
+       			<c:choose>
+       				<c:when test="${result.btnType eq 'href'}">
+       					<button class="modal-end-point" onclick="location.href='<c:out value="${result.btnValue}"/>';" style="background:<c:out value="${result.btnColor }"/>;"><c:out value="${result.btnText}"/></button>
+       				</c:when>
+       				
+       				<c:when test="${result.btnType eq 'function'}">
+       					<button class="modal-end-point" onclick="<c:out value="${result.btnValue}"/>;" style="background:<c:out value="${result.btnColor }"/>;"><c:out value="${result.btnText}"/></button>
+       				</c:when>
+       			</c:choose>
+       		</c:forEach>
        	</div>
        </div>
 </div>
