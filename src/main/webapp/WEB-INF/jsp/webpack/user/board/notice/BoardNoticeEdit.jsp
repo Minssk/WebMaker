@@ -12,6 +12,7 @@
 <script type="text/javascript" src="<c:url value="/ckeditor5/build/ckeditor.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/ckeditor5/build/UploadAdapter.js"/>"></script>
 <style>
+	.ck-editor{z-index: 0;}
 	.ck-editor__editable { height: 500px;}
 	.ck-content {font-size: 14px; line-height: 1.5;}
 </style>

@@ -176,6 +176,81 @@
 
 
 
+.novel-wrap{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.novel-wrap-title{
+	color: #333333;
+	margin-bottom: 10px;
+}
+/*커버*/
+.novel-cover-wrap{
+	flex:3;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 30px;
+}
+.novel-cover-area{
+	padding: 0px 30px;
+}
+.novel-cover-img-wrap{
+	border: none;
+}
+.novel-cover-img-wrap > img{
+	width: 100%;
+	border: 2px solid #333333;
+	border-radius: 10px;
+}
+
+
+/*file*/
+.novel-cover-controller-area{
+	margin-top: 20px;
+}
+.filebox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+}
+.filebox .upload-name {
+	border:none;
+    border-bottom: 1px solid #dddddd;
+    color: #5a5a5a;
+    flex: 7;
+    height: 100%;
+    margin-right: 10px;
+}
+.filebox label {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: #fff;
+    background-color: #373cb7;
+    cursor: pointer;
+    flex: 3;
+    height: 100%;
+}
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+/*커버*/
+
+/*내용*/
+.novel-info-wrap{
+	flex: 7;
+	display: flex;
+	flex-direction: column;
+}
+/*내용*/
+
 
 
 

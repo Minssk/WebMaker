@@ -50,8 +50,7 @@
 	        contentType:false,
 	        success : function(result) {
             	if(result.code == 'success') {
-            		alert('저장되었습니다.');
-            		move_list();
+            		openModal(3);
             	}else if(result.code == 'E002') {
             		alert('해당파일의 확장자는 업로드할 수 없습니다.\n재 업로드 후 다시시도 부탁드립니다.');
             	}else{

@@ -102,7 +102,6 @@ public class BoardNoticeController {
 		Map<String, Object> resultMap = new HashMap<>();
 		List<FileVO> result = null;
 		try {
-			System.out.println("ALERT FILE UPLOADER START...");
 			final Map<String, MultipartFile> files = multiRequest.getFileMap();
 		    if (!files.isEmpty()) {
 		    	result = fileUtil.parseFileInf(files, "NOTICE_", 0, "", "");

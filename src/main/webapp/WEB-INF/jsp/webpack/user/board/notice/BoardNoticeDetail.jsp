@@ -42,8 +42,7 @@
 	        contentType:false,
 	        success : function(result) {
             	if(result.code == 'success') {
-            		alert('해당 게시글이 삭제 되었습니다.');
-            		move_list();
+            		openModal(5);
             	}else{
             		alert('게시글을 삭제할 수 없습니다.\n새로고침 후 다시시도 부탁드립니다.');
             	}

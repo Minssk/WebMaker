@@ -14,6 +14,7 @@
 
     <session-config>
         <session-timeout>600</session-timeout>
+        <tracking-mode>COOKIE</tracking-mode>
     </session-config>
 
     <error-page>

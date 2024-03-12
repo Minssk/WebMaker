@@ -11,6 +11,7 @@
 <script type="text/javascript" src="<c:url value="/js/webpack/board-assist.js"/>"></script>
 
 <script>
+	let pageIndexValue;
 	function move_edit(){
 		var searchForm = document.getElementById("searchForm");
 		searchForm.action = "<c:out value="${pageContext.request.contextPath}"/><c:out value="${rootUrl}"/>/BoardNoticeEdit.do";
@@ -53,9 +54,8 @@
 	        contentType: "application/json;charset=UTF-8",
 	        success : function(result) {
             	if(result.code == 'success') {
-            		alert(result.message+'건 게시글이 삭제 되었습니다.');
-            		const value = document.querySelector('input[name="pageIndex"]').value;
-            		move_Page(value);
+            		pageIndexValue = document.querySelector('input[name="pageIndex"]').value;
+            		openModal(4);
             	}else{
             		alert('게시글을 삭제할 수 없습니다.\n새로고침 후 다시시도 부탁드립니다.');
             	}

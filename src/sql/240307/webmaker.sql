@@ -1,6 +1,6 @@
 ﻿# Host: 127.0.0.1:3316  (Version 5.5.5-10.8.3-MariaDB)
-# Date: 2024-03-08 17:56:55
-# Generator: MySQL-Front 6.0  (Build 2.20)
+# Date: 2024-03-12 23:22:13
+# Generator: MySQL-Front 6.1  (Build 1.26)
 
 
 #
@@ -43,7 +43,7 @@ CREATE TABLE `tb_board_notice` (
 # Data for table "tb_board_notice"
 #
 
-INSERT INTO `tb_board_notice` VALUES ('NOTI_000000000000252','웹 메이커에 오신 것을 환영합니다.','<p>환영합니다.</p>',2,NULL,'N','user01','2024-02-22 16:30:16',NULL,NULL),('NOTI_000000000000253','IU \'Shopper\' MV','<figure class=\"media\"><div data-oembed-url=\"https://www.youtube.com/watch?v=kHW-UVXOcLU\"><div style=\"position: relative; padding-bottom: 100%; height: 0; padding-bottom: 56.2493%;\"><iframe src=\"https://www.youtube.com/embed/kHW-UVXOcLU\" style=\"position: absolute; width: 100%; height: 100%; top: 0; left: 0;\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\"></iframe></div></div></figure><p>&nbsp;</p>',19,NULL,'N','user01','2024-02-22 16:33:29','user01','2024-02-25 12:14:33'),('NOTI_000000000000281','[안내] 표준프레임워크 v4.2 베타 버전 안내','<p>전정부 프레임워크 4.2 버전 이 출시되어 안내드립니다.</p><p>아래 본문을 확인해 주십시오.</p><p>&nbsp;</p><hr><p><span style=\"color:rgb(0,0,0);\">안녕하십니까?</span><br><span style=\"color:rgb(0,0,0);\">표준프레임워크 센터입니다.</span><br><br><span style=\"color:rgb(0,0,0);\">전자정부 표준프레임워크 4.2 베타 버전을 배포합니다.</span><br><br><span style=\"color:rgb(0,0,0);\">1) 실행환경 v4.2(베타)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 실행환경 적용 오픈소스SW 업그레이드 (Spring Framework 5.3.20 -&gt; 5.3.27)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 실행환경 적용 오픈소스SW 업그레이드 (Spring Security 5.7.1 -&gt; 5.8.3)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 실행환경 적용 오픈소스SW 업그레이드 (Spring Batch 4.3.6 -&gt; 4.3.8)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - SpringBoot 2.7.12 지원</span><br><br><span style=\"color:rgb(0,0,0);\">2) 개발환경 v4.2(베타)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - Eclipse 2022-12 (4.26.0) 적용</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 실행환경 4.2.0 적용</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 공통컴포넌트 251종 (공통컴포넌트 연계모듈 8종 업그레이드, 미사용 2종 삭제)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 44명의 개발자 컨트리뷰션과 보안강화패치(국정원, 국가보안기술연구소-NSR)가 적용된 공통컴포넌트 및 템플릿 3종 탑재</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 시큐어코딩을 위한 PMD Ruleset 추가</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - UML/ERD Editor를 AmaterasModeler로 변경</span><br><br><span style=\"color:rgb(0,0,0);\">3) 공통컴포넌트 v4.2(베타)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 실행환경 4.2.0 업그레이드 반영</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 공통컴포넌트 연계모듈 6종 업그레이드 (Twitter연동, Facebook 연동, 기관코드수신, 소셜 인증 기반 로그인 기능, 환율계산, LDAP조직도관리)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 미사용 2종 삭제 (실명확인, 공공i-Pin 실명확인)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 44명의 개발자 컨트리뷰션 반영</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 외부전문업체 보안취약점 코드 점검 및 보안 패치</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 국정원, NSR(국가보안기술연구소)의 보안 점검 결과 반영을 통한 시큐어 코딩</span></p><hr><p>Link : <a href=\"https://www.egovframe.go.kr/home/ntt/nttRead.do?pagerOffset=0&amp;searchKey=&amp;searchValue=&amp;menuNo=74&amp;bbsId=6&amp;nttId=1886\">https://www.egovframe.go.kr/home/ntt/nttRead.do?pagerOffset=0&amp;searchKey=&amp;searchValue=&amp;menuNo=74&amp;bbsId=6&amp;nttId=1886</a></p>',18,NULL,'Y','user01','2024-02-25 12:16:01',NULL,NULL),('NOTI_000000000000282','2023년도 개발환경 v4.1 보안 패치 안내','<p>전자정부프레임워크 23년 4.1 보안패치 안내드립니다.</p><p>아래 본문 확인 후 해당사항 조치 부탁드립니다.</p><hr><p><span style=\"color:rgb(0,0,0);\">안녕하십니까?</span><br><span style=\"color:rgb(0,0,0);\">표준프레임워크 센터입니다.</span><br><span style=\"color:rgb(0,0,0);\">표준프레임워크 개발환경 v4.1 일부 모듈에 보안성 강화를 위하여 패치 소스 배포합니다.</span><br><br><span style=\"color:rgb(0,0,0);\">패치 대상 : 개발환경 v4.1 중 일부 템플릿 프로젝트(공통컴포넌트, 포털 사이트 예제, 엔터프라이즈 비즈니스 예제) 샘플 생성 기능 사용 시</span><br><span style=\"color:rgb(0,0,0);\">패치 방법 : 다음 방법 중 하나 선택하여 진행</span><br><span style=\"color:rgb(0,0,0);\">1. eGovFrame 메뉴 &gt; Configuration &gt; Customize Development Tool</span><br><span style=\"color:rgb(0,0,0);\">2. eGovFrame 메뉴 &gt; Configuration &gt; Add Plug-in</span><br><span style=\"color:rgb(0,0,0);\">3. Help &gt; Install New Software... 선택 후</span><br><span style=\"color:rgb(0,0,0);\">https://maven.egovframe.go.kr/update_4.1/ 입력</span><br><br><span style=\"color:rgb(0,0,0);\">올해 배포한&nbsp;표준프레임워크 4.1 버전의 일부 템플릿 프로젝트에 보안강화 조치를 진행한 것으로</span><br><span style=\"color:rgb(0,0,0);\">표준프레임워크 4.1 버전을 사용하는 경우 반드시 절차대로 패치를 적용하시기 바랍니다.</span><br><br><span style=\"color:rgb(0,0,0);\">※ 전자정부 표준프레임워크 센터 문의 이메일 : egovframesupport@gmail.com 문의 전화 : 1566-3598</span><br><br><span style=\"color:rgb(0,0,0);\">※ 전자정부 표준프레임워크 라이선스 </span><a href=\"https://www.egovframe.go.kr/home/sub.do?menuNo=23\">(상세 페이지 이동)</a><br><span style=\"color:rgb(0,0,0);\">전자정부 표준프레임워크 활용의 안정성 보장을 위해 위험성을 지속적으로 모니터링하고 있으나, 오픈소스의 특성상 문제가 발생할 수 있습니다.</span><br><span style=\"color:rgb(0,0,0);\">전자정부 표준프레임워크는 Apache 2.0 라이선스를 따르고 있는 오픈소스 프로그램입니다.</span><br><span style=\"color:rgb(0,0,0);\">Apache 2.0 라이선스에 따라 표준프레임워크를 활용하여 발생된 업무중단, 컴퓨터 고장 또는 오동작으로 인한 손해 등에 대해서 책임이 없습니다.</span><br><span style=\"color:rgb(0,0,0);\">단, 표준프레임워크 내에서 사용된 외부 오픈소스의 경우 원 오픈소스의 라이선스 정책을 유지합니다.</span></p><hr><p>&nbsp;</p><p>Link : <a href=\"https://www.egovframe.go.kr/home/ntt/nttRead.do?pagerOffset=0&amp;searchKey=&amp;searchValue=&amp;menuNo=74&amp;bbsId=6&amp;nttId=1881\">https://www.egovframe.go.kr/home/ntt/nttRead.do?pagerOffset=0&amp;searchKey=&amp;searchValue=&amp;menuNo=74&amp;bbsId=6&amp;nttId=1881</a></p>',4,NULL,'N','user01','2024-02-25 12:18:48',NULL,NULL),('NOTI_000000000000291','레드벨벳조하','<p>ㅇㅁㅂㅇㅈ</p><figure class=\"image\"><img src=\"https://i.ytimg.com/vi/KEFNlx4ZIOU/maxresdefault.jpg\"></figure>',1,NULL,'N','user01','2024-03-07 20:16:22',NULL,NULL),('NOTI_000000000000301','21','<p>21</p>',0,NULL,'N','user01','2024-03-08 10:12:35',NULL,NULL),('NOTI_000000000000311','12312','<p>31231</p>',0,NULL,'N','user01','2024-03-08 10:16:27',NULL,NULL),('NOTI_000000000000312','543543','<p>53443</p>',0,NULL,'N','user01','2024-03-08 10:17:16',NULL,NULL),('NOTI_000000000000313','zz','<p>zz</p>',0,NULL,'N','user01','2024-03-08 10:23:36',NULL,NULL),('NOTI_000000000000314','zz','<p>zz</p>',1,NULL,'N','user01','2024-03-08 10:23:59',NULL,NULL),('NOTI_000000000000315','21312123','<p>1233213</p>',0,NULL,'N','user01','2024-03-08 16:43:04',NULL,NULL),('NOTI_000000000000316','213123123','<p>1232132131</p>',0,NULL,'N','user01','2024-03-08 16:43:08',NULL,NULL),('NOTI_000000000000317','122121','<p>21212121</p>',1,NULL,'N','user01','2024-03-08 16:43:37',NULL,NULL);
+INSERT INTO `tb_board_notice` VALUES ('NOTI_000000000000252','웹 메이커에 오신 것을 환영합니다.','<p>환영합니다.123232</p>',3,NULL,'N','user01','2024-02-22 16:30:16','user01','2024-03-12 21:36:04'),('NOTI_000000000000253','IU \'Shopper\' MV','<figure class=\"media\"><div data-oembed-url=\"https://www.youtube.com/watch?v=kHW-UVXOcLU\"><div style=\"position: relative; padding-bottom: 100%; height: 0; padding-bottom: 56.2493%;\"><iframe src=\"https://www.youtube.com/embed/kHW-UVXOcLU\" style=\"position: absolute; width: 100%; height: 100%; top: 0; left: 0;\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\"></iframe></div></div></figure><p>&nbsp;</p>',19,NULL,'N','user01','2024-02-22 16:33:29','user01','2024-02-25 12:14:33'),('NOTI_000000000000281','[안내] 표준프레임워크 v4.2 베타 버전 안내','<p>전정부 프레임워크 4.2 버전 이 출시되어 안내드립니다.</p><p>아래 본문을 확인해 주십시오.</p><p>&nbsp;</p><hr><p><span style=\"color:rgb(0,0,0);\">안녕하십니까?</span><br><span style=\"color:rgb(0,0,0);\">표준프레임워크 센터입니다.</span><br><br><span style=\"color:rgb(0,0,0);\">전자정부 표준프레임워크 4.2 베타 버전을 배포합니다.</span><br><br><span style=\"color:rgb(0,0,0);\">1) 실행환경 v4.2(베타)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 실행환경 적용 오픈소스SW 업그레이드 (Spring Framework 5.3.20 -&gt; 5.3.27)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 실행환경 적용 오픈소스SW 업그레이드 (Spring Security 5.7.1 -&gt; 5.8.3)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 실행환경 적용 오픈소스SW 업그레이드 (Spring Batch 4.3.6 -&gt; 4.3.8)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - SpringBoot 2.7.12 지원</span><br><br><span style=\"color:rgb(0,0,0);\">2) 개발환경 v4.2(베타)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - Eclipse 2022-12 (4.26.0) 적용</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 실행환경 4.2.0 적용</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 공통컴포넌트 251종 (공통컴포넌트 연계모듈 8종 업그레이드, 미사용 2종 삭제)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 44명의 개발자 컨트리뷰션과 보안강화패치(국정원, 국가보안기술연구소-NSR)가 적용된 공통컴포넌트 및 템플릿 3종 탑재</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 시큐어코딩을 위한 PMD Ruleset 추가</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - UML/ERD Editor를 AmaterasModeler로 변경</span><br><br><span style=\"color:rgb(0,0,0);\">3) 공통컴포넌트 v4.2(베타)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 실행환경 4.2.0 업그레이드 반영</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 공통컴포넌트 연계모듈 6종 업그레이드 (Twitter연동, Facebook 연동, 기관코드수신, 소셜 인증 기반 로그인 기능, 환율계산, LDAP조직도관리)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 미사용 2종 삭제 (실명확인, 공공i-Pin 실명확인)</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 44명의 개발자 컨트리뷰션 반영</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 외부전문업체 보안취약점 코드 점검 및 보안 패치</span><br><span style=\"color:rgb(0,0,0);\">&nbsp; &nbsp; - 국정원, NSR(국가보안기술연구소)의 보안 점검 결과 반영을 통한 시큐어 코딩</span></p><hr><p>Link : <a href=\"https://www.egovframe.go.kr/home/ntt/nttRead.do?pagerOffset=0&amp;searchKey=&amp;searchValue=&amp;menuNo=74&amp;bbsId=6&amp;nttId=1886\">https://www.egovframe.go.kr/home/ntt/nttRead.do?pagerOffset=0&amp;searchKey=&amp;searchValue=&amp;menuNo=74&amp;bbsId=6&amp;nttId=1886</a></p>',18,NULL,'Y','user01','2024-02-25 12:16:01',NULL,NULL),('NOTI_000000000000282','2023년도 개발환경 v4.1 보안 패치 안내','<p>전자정부프레임워크 23년 4.1 보안패치 안내드립니다.</p><p>아래 본문 확인 후 해당사항 조치 부탁드립니다.</p><hr><p><span style=\"color:rgb(0,0,0);\">안녕하십니까?</span><br><span style=\"color:rgb(0,0,0);\">표준프레임워크 센터입니다.</span><br><span style=\"color:rgb(0,0,0);\">표준프레임워크 개발환경 v4.1 일부 모듈에 보안성 강화를 위하여 패치 소스 배포합니다.</span><br><br><span style=\"color:rgb(0,0,0);\">패치 대상 : 개발환경 v4.1 중 일부 템플릿 프로젝트(공통컴포넌트, 포털 사이트 예제, 엔터프라이즈 비즈니스 예제) 샘플 생성 기능 사용 시</span><br><span style=\"color:rgb(0,0,0);\">패치 방법 : 다음 방법 중 하나 선택하여 진행</span><br><span style=\"color:rgb(0,0,0);\">1. eGovFrame 메뉴 &gt; Configuration &gt; Customize Development Tool</span><br><span style=\"color:rgb(0,0,0);\">2. eGovFrame 메뉴 &gt; Configuration &gt; Add Plug-in</span><br><span style=\"color:rgb(0,0,0);\">3. Help &gt; Install New Software... 선택 후</span><br><span style=\"color:rgb(0,0,0);\">https://maven.egovframe.go.kr/update_4.1/ 입력</span><br><br><span style=\"color:rgb(0,0,0);\">올해 배포한&nbsp;표준프레임워크 4.1 버전의 일부 템플릿 프로젝트에 보안강화 조치를 진행한 것으로</span><br><span style=\"color:rgb(0,0,0);\">표준프레임워크 4.1 버전을 사용하는 경우 반드시 절차대로 패치를 적용하시기 바랍니다.</span><br><br><span style=\"color:rgb(0,0,0);\">※ 전자정부 표준프레임워크 센터 문의 이메일 : egovframesupport@gmail.com 문의 전화 : 1566-3598</span><br><br><span style=\"color:rgb(0,0,0);\">※ 전자정부 표준프레임워크 라이선스 </span><a href=\"https://www.egovframe.go.kr/home/sub.do?menuNo=23\">(상세 페이지 이동)</a><br><span style=\"color:rgb(0,0,0);\">전자정부 표준프레임워크 활용의 안정성 보장을 위해 위험성을 지속적으로 모니터링하고 있으나, 오픈소스의 특성상 문제가 발생할 수 있습니다.</span><br><span style=\"color:rgb(0,0,0);\">전자정부 표준프레임워크는 Apache 2.0 라이선스를 따르고 있는 오픈소스 프로그램입니다.</span><br><span style=\"color:rgb(0,0,0);\">Apache 2.0 라이선스에 따라 표준프레임워크를 활용하여 발생된 업무중단, 컴퓨터 고장 또는 오동작으로 인한 손해 등에 대해서 책임이 없습니다.</span><br><span style=\"color:rgb(0,0,0);\">단, 표준프레임워크 내에서 사용된 외부 오픈소스의 경우 원 오픈소스의 라이선스 정책을 유지합니다.</span></p><hr><p>&nbsp;</p><p>Link : <a href=\"https://www.egovframe.go.kr/home/ntt/nttRead.do?pagerOffset=0&amp;searchKey=&amp;searchValue=&amp;menuNo=74&amp;bbsId=6&amp;nttId=1881\">https://www.egovframe.go.kr/home/ntt/nttRead.do?pagerOffset=0&amp;searchKey=&amp;searchValue=&amp;menuNo=74&amp;bbsId=6&amp;nttId=1881</a></p>',4,NULL,'N','user01','2024-02-25 12:18:48',NULL,NULL),('NOTI_000000000000301','21','<p>21</p>',0,NULL,'N','user01','2024-03-08 10:12:35',NULL,NULL),('NOTI_000000000000311','12312','<p>31231</p>',0,NULL,'N','user01','2024-03-08 10:16:27',NULL,NULL),('NOTI_000000000000333','132','<p>132ㅋㅋㅋㅋㅋㅋ</p>',1,NULL,'N','user01','2024-03-12 21:33:36','user01','2024-03-12 21:33:47'),('NOTI_000000000000334','33312','<p>1323</p>',0,NULL,'N','user01','2024-03-12 21:33:54',NULL,NULL),('NOTI_000000000000336','32323232','<p>3213212</p>',0,NULL,'N','user01','2024-03-12 21:33:59',NULL,NULL),('NOTI_000000000000337','13','<p>312</p>',1,NULL,'N','user01','2024-03-12 21:36:11',NULL,NULL),('NOTI_000000000000338','13','<p>312</p>',0,NULL,'N','user01','2024-03-12 21:36:12',NULL,NULL),('NOTI_000000000000339','132','<p>3321</p>',0,NULL,'N','user01','2024-03-12 21:36:20',NULL,NULL),('NOTI_000000000000340','132','<p>3321</p>',0,NULL,'N','user01','2024-03-12 21:36:20',NULL,NULL),('NOTI_000000000000341','132','<p>3321</p>',0,NULL,'N','user01','2024-03-12 21:36:21',NULL,NULL),('NOTI_000000000000342','132','<p>3321</p>',0,NULL,'N','user01','2024-03-12 21:36:21',NULL,NULL),('NOTI_000000000000343','132','<p>3321</p>',0,NULL,'N','user01','2024-03-12 21:36:21',NULL,NULL),('NOTI_000000000000344','132','<p>3321</p>',0,NULL,'N','user01','2024-03-12 21:36:21',NULL,NULL),('NOTI_000000000000345','132','<p>3321</p>',0,NULL,'N','user01','2024-03-12 21:36:21',NULL,NULL),('NOTI_000000000000346','ㄱㅎㄱ','<p>ㄱㅎㄷㅎㄱㄷ</p>',0,NULL,'N','user01','2024-03-12 21:36:35',NULL,NULL),('NOTI_000000000000347','ㄱㅎㄱ','<p>ㄱㅎㄷㅎㄱㄷ</p>',0,NULL,'N','user01','2024-03-12 21:36:35',NULL,NULL),('NOTI_000000000000348','ㄱㅎㄱ','<p>ㄱㅎㄷㅎㄱㄷ</p>',0,NULL,'N','user01','2024-03-12 21:36:36',NULL,NULL),('NOTI_000000000000349','ㅈㄹㄷㅈㄹㄷ','<p>ㅈㄷㄹㄷㅈㅈㄹㄷ</p>',0,NULL,'N','user01','2024-03-12 21:36:48',NULL,NULL),('NOTI_000000000000350','ㅈㄹㄷㅈㄹㄷ','<p>ㅈㄷㄹㄷㅈㅈㄹㄷ</p>',1,NULL,'N','user01','2024-03-12 21:36:53',NULL,NULL),('NOTI_000000000000351','32323','<p>12332112</p>',0,NULL,'N','user01','2024-03-12 21:39:42',NULL,NULL),('NOTI_000000000000352','ㄱㄱㅈㄷㄹㄷㅈ','<p>133123</p>',0,NULL,'N','user01','2024-03-12 21:39:47',NULL,NULL);
 
 #
 # Structure for table "tb_com_address_mgt"
@@ -674,7 +674,7 @@ CREATE TABLE `tb_com_seq` (
 # Data for table "tb_com_seq"
 #
 
-INSERT INTO `tb_com_seq` VALUES ('ADBKUSER_ID',1),('ADBK_ID',1),('ADMINIST_WORD_ID',1),('ADMIN_CODE_OPERT',1),('ANN_ID',1),('ANSWER_NO',1),('BACKUP_OPERT_ID',1),('BACKUP_RESULT_ID',1),('BANNER_ID',1),('BATCH_OPERT_ID',1),('BATCH_RESULT_ID',1),('BATCH_SCHDUL_ID',1),('BBS_ID',1),('CLB_ID',1),('CMMNTY_ID',1),('CNSLT_ID',1),('CNTC_ID',1),('CNTC_MESSAGE_ID',1),('CNTNTS_ID',1),('COMTECOPSEQ',1),('CPYRHT_ID',1),('CTSNN_ID',1),('DAM_ID',1),('DB_MNTRNG_LOG_ID',1),('DEPT_JOB_BX_ID',1),('DEPT_JOB_ID',1),('DIARY_ID',1),('DUS_ID',1),('EVENTINFO_ID',1),('EVENT_ID',1),('EXTRLHRINFO_ID',1),('FAQ_ID',1),('FILESYS_LOGID',1),('FILESYS_MNTRNG',1),('FILE_ID',371),('GROUP_ID',1),('HPCM_ID',1),('HTTL_ID',1),('HTTP_ID',1),('INDVDL_INFO_ID',1),('INFRML_SANCTN',1),('INSTT_CODE_OPERT',1),('INSTT_ID',1),('ISG_ID',1),('ITEM_ID',1),('KNO_ID',1),('KNO_ID2',1),('LEADER_SCHDUL_ID',1),('LOGINLOG_ID',1),('LSI_ID',1),('MAILMSG_ID',1),('MEMO_REPRT',1),('MEMO_TODO_ID',1),('MSI_ID',1),('MTG_ID',1),('MTG_PLACE_ID',1),('NCRD_ID',1),('NEWS_ID',1),('NOTE_ID',1),('NOTE_RECPTN_ID',1),('NOTE_TRNSMIT_ID',1),('NOTICE_ID',321),('NTT_ID',1),('NTWRKSVC_LOGID',1),('NTWRK_ID',1),('ONLINE_MUL_ID',1),('ORGNZT_ID',1),('POLL_IEM_ID',1),('POLL_MGR_ID',1),('POLL_RUT_ID',1),('POPUP_ID',1),('PROC_ID',1),('PROL_ID',1),('PROXYLOG_ID',1),('PROXYSVC_ID',1),('QA_ID',1),('QESITM_',1),('QESRSPNS_ID',1),('QESTNR_QESITM_ID',1),('QESTNR_RPD_ID',1),('QUSTNRQESTN_ID',1),('QUSTNRTMPLA_ID',1),('RECOMEND_SITE_ID',1),('RESTDE_ID',1),('RESVE_ID',1),('ROLE_ID',20),('ROUGHMAP_ID',1),('RSS_ID',1),('RS_ID',1),('RWARD_ID',1),('SCHDUL_ID',1),('SCRAP_ID',1),('SERVER_ID',1),('SEVEQ_ID',1),('SITE_ID',1),('SMS_ID',1),('SRCHWRD_ID',1),('SRCHWRD_MANAGEID',2),('SRCHWRD_MANAGE_I',1),('STSFDG_NO',1),('SVCRESMONTLOG_ID',1),('SVC_ID',1),('SYNCHRNSERVER_ID',1),('SYSLOG_ID',1),('SYS_ID',1),('TEST1',1),('TMPLAT_ID',1),('TROBL_ID',1),('TRSMRCVLOG_ID',1),('TR_MNTRNG_LOG_ID',1),('UNITY_LINK_ID',1),('USE_STPLAT_ID',3),('USRCNFRM_ID',13),('WEBLOG_ID',1),('WIKI_ID',1),('WIKMNTHNG_REPRT',1),('WORD_ID',1);
+INSERT INTO `tb_com_seq` VALUES ('ADBKUSER_ID',1),('ADBK_ID',1),('ADMINIST_WORD_ID',1),('ADMIN_CODE_OPERT',1),('ANN_ID',1),('ANSWER_NO',1),('BACKUP_OPERT_ID',1),('BACKUP_RESULT_ID',1),('BANNER_ID',1),('BATCH_OPERT_ID',1),('BATCH_RESULT_ID',1),('BATCH_SCHDUL_ID',1),('BBS_ID',1),('CLB_ID',1),('CMMNTY_ID',1),('CNSLT_ID',1),('CNTC_ID',1),('CNTC_MESSAGE_ID',1),('CNTNTS_ID',1),('COMTECOPSEQ',1),('CPYRHT_ID',1),('CTSNN_ID',1),('DAM_ID',1),('DB_MNTRNG_LOG_ID',1),('DEPT_JOB_BX_ID',1),('DEPT_JOB_ID',1),('DIARY_ID',1),('DUS_ID',1),('EVENTINFO_ID',1),('EVENT_ID',1),('EXTRLHRINFO_ID',1),('FAQ_ID',1),('FILESYS_LOGID',1),('FILESYS_MNTRNG',1),('FILE_ID',421),('GROUP_ID',1),('HPCM_ID',1),('HTTL_ID',1),('HTTP_ID',1),('INDVDL_INFO_ID',1),('INFRML_SANCTN',1),('INSTT_CODE_OPERT',1),('INSTT_ID',1),('ISG_ID',1),('ITEM_ID',1),('KNO_ID',1),('KNO_ID2',1),('LEADER_SCHDUL_ID',1),('LOGINLOG_ID',1),('LSI_ID',1),('MAILMSG_ID',1),('MEMO_REPRT',1),('MEMO_TODO_ID',1),('MSI_ID',1),('MTG_ID',1),('MTG_PLACE_ID',1),('NCRD_ID',1),('NEWS_ID',1),('NOTE_ID',1),('NOTE_RECPTN_ID',1),('NOTE_TRNSMIT_ID',1),('NOTICE_ID',361),('NTT_ID',1),('NTWRKSVC_LOGID',1),('NTWRK_ID',1),('ONLINE_MUL_ID',1),('ORGNZT_ID',1),('POLL_IEM_ID',1),('POLL_MGR_ID',1),('POLL_RUT_ID',1),('POPUP_ID',1),('PROC_ID',1),('PROL_ID',1),('PROXYLOG_ID',1),('PROXYSVC_ID',1),('QA_ID',1),('QESITM_',1),('QESRSPNS_ID',1),('QESTNR_QESITM_ID',1),('QESTNR_RPD_ID',1),('QUSTNRQESTN_ID',1),('QUSTNRTMPLA_ID',1),('RECOMEND_SITE_ID',1),('RESTDE_ID',1),('RESVE_ID',1),('ROLE_ID',20),('ROUGHMAP_ID',1),('RSS_ID',1),('RS_ID',1),('RWARD_ID',1),('SCHDUL_ID',1),('SCRAP_ID',1),('SERVER_ID',1),('SEVEQ_ID',1),('SITE_ID',1),('SMS_ID',1),('SRCHWRD_ID',1),('SRCHWRD_MANAGEID',2),('SRCHWRD_MANAGE_I',1),('STSFDG_NO',1),('SVCRESMONTLOG_ID',1),('SVC_ID',1),('SYNCHRNSERVER_ID',1),('SYSLOG_ID',1),('SYS_ID',1),('TEST1',1),('TMPLAT_ID',1),('TROBL_ID',1),('TRSMRCVLOG_ID',1),('TR_MNTRNG_LOG_ID',1),('UNITY_LINK_ID',1),('USE_STPLAT_ID',3),('USRCNFRM_ID',13),('WEBLOG_ID',1),('WIKI_ID',1),('WIKMNTHNG_REPRT',1),('WORD_ID',1);
 
 #
 # Structure for table "tb_com_shortcut_menu"
@@ -871,13 +871,13 @@ CREATE TABLE `tb_modal_btn` (
   `btn_value` varchar(512) DEFAULT NULL COMMENT '버튼 값',
   `btn_color` varchar(255) DEFAULT NULL COMMENT '버튼색',
   PRIMARY KEY (`btn_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COMMENT='모달 버튼';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COMMENT='모달 버튼';
 
 #
 # Data for table "tb_modal_btn"
 #
 
-INSERT INTO `tb_modal_btn` VALUES (0,0,0,'href','메인페이지','/','#373737c7'),(1,1,0,'function','닫기','move_list()','#373737c7'),(2,NULL,0,'href','이동','/move.do','#373737c7');
+INSERT INTO `tb_modal_btn` VALUES (0,1,0,'href','메인페이지','/','#373737c7'),(1,2,0,'function','목록으로','move_list()','#373737c7'),(2,3,0,'function','목록으로','move_list()','#373737c7'),(3,4,0,'function','닫기','move_Page(pageIndexValue)','#373737c7');
 
 #
 # Structure for table "tb_modal_tmp"
@@ -927,51 +927,51 @@ CREATE
   ALGORITHM = UNDEFINED
   VIEW `tb_account_view`
   AS
-SELECT
-  `tb_account_mber_mgt`.`ESNTL_ID` AS 'esntl_id',
-  `tb_account_mber_mgt`.`MBER_ID` AS 'user_id',
-  `tb_account_mber_mgt`.`PASSWORD` AS 'password',
-  `tb_account_mber_mgt`.`MBER_NM` AS 'user_nm',
-  `tb_com_emply`.`AUTHOR_CODE` AS 'author_code',
-  `tb_account_mber_mgt`.`ZIP` AS 'user_zip',
-  `tb_account_mber_mgt`.`ADRES` AS 'user_adres',
-  `tb_account_mber_mgt`.`MBER_EMAIL_ADRES` AS 'user_email',
-  ' ' AS 'group_id',
-  'GNR' AS 'user_se',
-  ' ' AS 'orgnzt_id'
-FROM
-  (`tb_account_mber_mgt`
-    LEFT JOIN `tb_com_emply` ON (`tb_com_emply`.`SCRTY_DTRMN_TRGET_ID` = `tb_account_mber_mgt`.`ESNTL_ID`))
-UNION ALL
-SELECT
-  `tb_account_admin_mgt`.`ESNTL_ID` AS 'esntl_id',
-  `tb_account_admin_mgt`.`EMPLYR_ID` AS 'emplyr_id',
-  `tb_account_admin_mgt`.`PASSWORD` AS 'password',
-  `tb_account_admin_mgt`.`USER_NM` AS 'user_nm',
-  `tb_com_emply`.`AUTHOR_CODE` AS 'author_code',
-  `tb_account_admin_mgt`.`ZIP` AS 'zip',
-  `tb_account_admin_mgt`.`HOUSE_ADRES` AS 'house_adres',
-  `tb_account_admin_mgt`.`EMAIL_ADRES` AS 'email_adres',
-  `tb_account_admin_mgt`.`GROUP_ID` AS 'group_id',
-  'USR' AS 'user_se',
-  `tb_account_admin_mgt`.`ORGNZT_ID` AS 'orgnzt_id'
-FROM
-  (`tb_account_admin_mgt`
-    LEFT JOIN `tb_com_emply` ON (`tb_com_emply`.`SCRTY_DTRMN_TRGET_ID` = `tb_account_admin_mgt`.`ESNTL_ID`))
-UNION ALL
-SELECT
-  `tb_account_enterprise_mgt`.`ESNTL_ID` AS 'esntl_id',
-  `tb_account_enterprise_mgt`.`ENTRPRS_MBER_ID` AS 'entrprs_mber_id',
-  `tb_account_enterprise_mgt`.`ENTRPRS_MBER_PASSWORD` AS 'entrprs_mber_password',
-  `tb_account_enterprise_mgt`.`CMPNY_NM` AS 'cmpny_nm',
-  `tb_com_emply`.`AUTHOR_CODE` AS 'author_code',
-  `tb_account_enterprise_mgt`.`ZIP` AS 'zip',
-  `tb_account_enterprise_mgt`.`ADRES` AS 'adres',
-  `tb_account_enterprise_mgt`.`APPLCNT_EMAIL_ADRES` AS 'applcnt_email_adres',
-  ' ' AS 'name_exp_28',
-  'ENT' AS 'user_se',
-  ' ' AS 'orgnzt_id'
-FROM
-  (`tb_account_enterprise_mgt`
-    LEFT JOIN `tb_com_emply` ON (`tb_com_emply`.`SCRTY_DTRMN_TRGET_ID` = `tb_account_enterprise_mgt`.`ESNTL_ID`))
-ORDER BY `esntl_id`;
+  SELECT
+    `tb_account_mber_mgt`.`ESNTL_ID` AS 'esntl_id',
+    `tb_account_mber_mgt`.`MBER_ID` AS 'user_id',
+    `tb_account_mber_mgt`.`PASSWORD` AS 'password',
+    `tb_account_mber_mgt`.`MBER_NM` AS 'user_nm',
+    `tb_com_emply`.`AUTHOR_CODE` AS 'author_code',
+    `tb_account_mber_mgt`.`ZIP` AS 'user_zip',
+    `tb_account_mber_mgt`.`ADRES` AS 'user_adres',
+    `tb_account_mber_mgt`.`MBER_EMAIL_ADRES` AS 'user_email',
+    ' ' AS 'group_id',
+    'GNR' AS 'user_se',
+    ' ' AS 'orgnzt_id'
+  FROM
+    (`tb_account_mber_mgt`
+      LEFT JOIN `tb_com_emply` ON (`tb_com_emply`.`SCRTY_DTRMN_TRGET_ID` = `tb_account_mber_mgt`.`ESNTL_ID`))
+  UNION ALL
+  SELECT
+    `tb_account_admin_mgt`.`ESNTL_ID` AS 'esntl_id',
+    `tb_account_admin_mgt`.`EMPLYR_ID` AS 'emplyr_id',
+    `tb_account_admin_mgt`.`PASSWORD` AS 'password',
+    `tb_account_admin_mgt`.`USER_NM` AS 'user_nm',
+    `tb_com_emply`.`AUTHOR_CODE` AS 'author_code',
+    `tb_account_admin_mgt`.`ZIP` AS 'zip',
+    `tb_account_admin_mgt`.`HOUSE_ADRES` AS 'house_adres',
+    `tb_account_admin_mgt`.`EMAIL_ADRES` AS 'email_adres',
+    `tb_account_admin_mgt`.`GROUP_ID` AS 'group_id',
+    'USR' AS 'user_se',
+    `tb_account_admin_mgt`.`ORGNZT_ID` AS 'orgnzt_id'
+  FROM
+    (`tb_account_admin_mgt`
+      LEFT JOIN `tb_com_emply` ON (`tb_com_emply`.`SCRTY_DTRMN_TRGET_ID` = `tb_account_admin_mgt`.`ESNTL_ID`))
+  UNION ALL
+  SELECT
+    `tb_account_enterprise_mgt`.`ESNTL_ID` AS 'esntl_id',
+    `tb_account_enterprise_mgt`.`ENTRPRS_MBER_ID` AS 'entrprs_mber_id',
+    `tb_account_enterprise_mgt`.`ENTRPRS_MBER_PASSWORD` AS 'entrprs_mber_password',
+    `tb_account_enterprise_mgt`.`CMPNY_NM` AS 'cmpny_nm',
+    `tb_com_emply`.`AUTHOR_CODE` AS 'author_code',
+    `tb_account_enterprise_mgt`.`ZIP` AS 'zip',
+    `tb_account_enterprise_mgt`.`ADRES` AS 'adres',
+    `tb_account_enterprise_mgt`.`APPLCNT_EMAIL_ADRES` AS 'applcnt_email_adres',
+    ' ' AS 'name_exp_28',
+    'ENT' AS 'user_se',
+    ' ' AS 'orgnzt_id'
+  FROM
+    (`tb_account_enterprise_mgt`
+      LEFT JOIN `tb_com_emply` ON (`tb_com_emply`.`SCRTY_DTRMN_TRGET_ID` = `tb_account_enterprise_mgt`.`ESNTL_ID`))
+  ORDER BY `esntl_id`;

@@ -20,7 +20,7 @@
 .table_edit > table > tbody > tr > th{text-align:center;vertical-align:middle;background-color:#F1F4F8;font-weight:700;}
 .table_edit > table > tbody > tr > td{vertical-align:middle;padding:10px;}
 
-.form_input{display:block;width:100%;height:100%;border-radius:.5em;border:1px solid rgba(0,0,0,0.2);line-height:1.5;min-height:35px;padding:10px;}
+.form_input{display:block;width:98%;height:100%;border-radius:.5em;border:1px solid rgba(0,0,0,0.2);line-height:1.5;min-height:35px;padding:10px;}
 .sort_left{text-align:left!important;vertical-align:middle;}
 .cus_pointer{cursor:pointer;}
 .pagin{display:flex;justify-content:center;margin:50px auto 0;}
