@@ -37,9 +37,72 @@
 				</div>
 				
 				<div class="novel-info-wrap">
-					<div class="novel-wrap-title">
-						<span>작품 제목 *</span>
+					<div class="novel-info-line-col">
+						<div class="novel-wrap-title">
+							<span>작품 제목 *</span>
+						</div>
+						<div class="novel-info-input-area">
+							<input type="text" placeholder="작품의 제목을 입력하세요.">
+						</div>
 					</div>
+					
+					<div class="novel-info-line-col">
+						<div class="novel-wrap-title">
+							<span>작품 설명 *</span>
+						</div>
+						<div class="novel-info-input-area">
+							<textarea placeholder="작품의 설명을 입력하세요."></textarea>
+						</div>
+					</div>
+					
+					<div class="novel-info-line-row">
+						<div class="novel-wrap-title">
+							<span>연재 주기 *</span>
+						</div>
+						<div class="novel-info-input-area">
+							<label class="novel-info-input-label">
+								<input type="checkbox">
+								<span>월요일</span>
+							</label>
+							
+							<label class="novel-info-input-label">
+								<input type="checkbox">
+								<span>화요일</span>
+							</label>
+							
+							<label class="novel-info-input-label">
+								<input type="checkbox">
+								<span>수요일</span>
+							</label>
+							
+							<label class="novel-info-input-label">
+								<input type="checkbox">
+								<span>목요일</span>
+							</label>
+							
+							<label class="novel-info-input-label">
+								<input type="checkbox">
+								<span>금요일</span>
+							</label>
+							
+							<label class="novel-info-input-label">
+								<input type="checkbox">
+								<span>토요일</span>
+							</label>
+							
+							<label class="novel-info-input-label">
+								<input type="checkbox">
+								<span>일요일</span>
+							</label>
+							
+							<label class="novel-info-input-label">
+								<input type="checkbox">
+								<span>비주기</span>
+							</label>
+							
+						</div>
+					</div>
+					
 				</div>
 			</div>
 			
