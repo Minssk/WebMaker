@@ -30,7 +30,7 @@ public class TextContentMgtController {
 		
 		System.out.println("################### 권한 ###################");
 		System.out.println(loginVO.getAuthorCode());
-		System.out.println("##########################################");
+		System.out.println("###########################################");
 		
 		
 		model.addAttribute("loginVO", loginVO);
@@ -46,7 +46,7 @@ public class TextContentMgtController {
 		
 		System.out.println("################### 권한 ###################");
 		System.out.println(loginVO.getAuthorCode());
-		System.out.println("##########################################");
+		System.out.println("###########################################");
 		
 		
 		
