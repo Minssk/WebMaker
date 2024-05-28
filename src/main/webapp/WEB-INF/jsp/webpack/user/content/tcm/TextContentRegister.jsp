@@ -9,6 +9,13 @@
 <c:set var="pageTitle">작품 쓰기</c:set>
 <link rel="stylesheet" type="text/css" href="<c:url value='/css/webpack/user/contents/textcontent.css' />" />
 
+<script>
+function createNovel(){
+	console.log('## tags..!');
+	console.log(tagify.value);
+}
+</script>
+
 <div class="main_content">
 	<div>
 		<h4 class="main_title"><c:out value="${pageTitle}"/></h4>
@@ -102,6 +109,20 @@
 							
 						</div>
 					</div>
+					
+					<div class="novel-info-line-col">
+						<div class="novel-wrap-title">
+							<span>작품 태그 *</span>
+						</div>
+						<div class="novel-info-input-area">
+							<input id="tagInput" class="customTags" name="tags" placeholder="태그를 선택하세요." value="">
+						</div>
+						
+						<script src="https://unpkg.com/@yaireo/tagify"></script>
+						<script src="<c:url value='/js/webpack/tagsSelector.js' />"></script>
+						<link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
+					</div>
+					
 					
 				</div>
 			</div>
