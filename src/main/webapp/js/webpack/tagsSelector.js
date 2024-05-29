@@ -1,5 +1,4 @@
 var input = document.querySelector('input[name="tags"]');
-
 var whitelist = [
 		"공포"
 		, "코미디"

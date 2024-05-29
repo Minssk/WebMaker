@@ -234,6 +234,8 @@
     cursor: pointer;
     flex: 3;
     height: 100%;
+    font-size: 14px;
+    border: 0;
 }
 .filebox input[type="file"] {
     position: absolute;
@@ -261,19 +263,71 @@
 	flex-direction: row;
 	margin-bottom: 15px;
 }
+.novel-info-sub-line-row{
+	display: flex;
+	flex-direction: row;
+	width: 98%;
+}
+.novel-info-sub-line-area{
+	flex: 1;
+}
 .novel-info-input-area > input{
 	width: 95%;
 	padding-left: 10px;
-	line-height: 30px;
+	line-height: 34.5px;
+	border: 1px solid #767676;
 }
 .novel-info-input-area > textarea{
 	width: 95%;
 	height: 100px;
 	padding-left: 10px;
-	line-height: 30px;
+	border: 1px solid #767676;
+}
+.novel-info-input-area > select{
+	width: 95%;
+	height: 38.5px;
+	padding-left: 10px;
+	color: #767676;
+}
+.novel-info-input-area > select > option{
+	padding: 10px 0;
 }
 .novel-info-input-label{
 	margin-right: 15px;
+}
+.novel-info-guide-area{
+	width: 93%;
+	background-color: #e7e7e7;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.novel-info-btn-area{
+	display: flex;
+	flex-direction: row;
+	width: 98%;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.novel-info-btn-area > button{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.btn-back{
+	color: #fff;
+    background-color: #707070;
+}
+.btn-send{
+	color: #fff;
+	background-color: #1b92cd;
 }
 
 
