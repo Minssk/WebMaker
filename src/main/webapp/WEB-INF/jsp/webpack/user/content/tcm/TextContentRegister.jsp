@@ -20,9 +20,26 @@ function send_novel_info(){
 	
 	var thmFile = document.querySelector('#tumfile');
 	if (thmFile.files.length == 0) {
-        alert('썸네일 파일이 없습니다.');
         openModal(5);
+        return;
+    }else{
+    	var file = thmFile.files[0];
+        var fileExtension = file.name.split('.').pop().toLowerCase();
+        if (fileExtension !== 'png' && fileExtension !== 'jpg' && fileExtension !== 'jpeg') {
+            openModal(6);
+            return;
+        }
     }
+	
+	var novelTitle = document.querySelector('#novelTitle');
+	if (!novelTitle || novelTitle.textContent.trim() === '') {
+		openModal(6);
+        return;
+	}
+	
+	
+	
+	
 }
 </script>
 
@@ -59,7 +76,7 @@ function send_novel_info(){
 							<span>작품 제목 *</span>
 						</div>
 						<div class="novel-info-input-area">
-							<input type="text" placeholder="작품의 제목을 입력하세요.">
+							<input id="novelTitle" name="novelTitle" type="text" placeholder="작품의 제목을 입력하세요.">
 						</div>
 					</div>
 					
@@ -68,7 +85,7 @@ function send_novel_info(){
 							<span>작품 설명 *</span>
 						</div>
 						<div class="novel-info-input-area">
-							<textarea placeholder="작품의 설명을 입력하세요."></textarea>
+							<textarea id="novelContent" name="novelContent" placeholder="작품의 설명을 입력하세요."></textarea>
 						</div>
 					</div>
 					
@@ -116,7 +133,6 @@ function send_novel_info(){
 								<input type="checkbox">
 								<span>비주기</span>
 							</label>
-							
 						</div>
 					</div>
 					
